@@ -1,0 +1,60 @@
+.banner {
+  padding: 80px 20px;
+  background-color: #F4F4F4;
+}
+
+.conteiner-banner{
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  align-items: center;
+  flex-wrap: wrap;
+  max-width: 1200px;
+ margin: 0 auto;
+}
+
+.banner h1 {
+  font-size: 2.6rem;
+}
+
+.banner p {
+ font-size: 1.5rem;
+ color: #525252;
+ line-height: 5rem;
+display: flex;
+}
+
+.imgPerfil{
+  width: 300px;
+}
+
+.banner h1::before {
+  content: "{ ";
+    font-size: 3.2rem;
+    color: #C25708;
+}
+
+.banner h1::after {
+  content: " }";
+    font-size: 3.2rem;
+    color: #C25708;
+}
+
+@media (max-width: 800px) {
+  .banner h1 {
+    font-size: 2.2rem;
+  }
+  .banner h1::before, .banner h1::after {
+    font-size: 2.5rem;
+  }
+  .imgPerfil{
+    width: 200px;
+  }
+}
+
+@media(max-width: 480px){
+  .imgPerfil {
+    display: none;
+  }
+}
+

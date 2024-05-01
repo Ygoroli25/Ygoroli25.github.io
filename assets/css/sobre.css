@@ -1,0 +1,14 @@
+.sobre {
+  padding: 80px 20px;
+  background-color: #E6E8E8;
+  position: relative;
+  }
+
+  .sobre-text{
+    max-width: 800px;
+    font-size: 1.2rem;
+  }
+
+  .sobre-text h2{
+    margin-bottom: 20px;
+  }

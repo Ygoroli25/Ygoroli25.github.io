@@ -1,0 +1,78 @@
+
+.experiencia {
+  padding: 80px 20px;
+  }
+  
+  .experiencia-text, .experiencia-empresa {
+    max-width: 450px;
+  }
+  
+  .experiencia-empresa, .experiencia-skills{
+   display: flex;
+   flex-direction: column;
+   gap: 20px;
+  }
+  
+  .experiencia-text h2{
+    font-size: 2.6rem;
+  }
+  
+  .experiencia-text p {
+    color: #525252;
+    font-size: 1.5rem;
+  }
+  
+  .experiencia-empresa h3{
+    margin-bottom: 4px;
+    font-size: 1.8rem;
+  }
+  
+  .experiencia-empresa p {
+    font-size: 1rem;
+  }
+  
+  .decoration{
+    position: relative;
+  }
+  .decoration span{
+    color: #525252;
+  }
+  
+  .decoration::before {
+    content: "";
+    display: block;
+    width: 4px;
+    height: 100%;
+    background-color: #C25708;
+    position: absolute;
+    left: -8px;
+    border-radius: 4px;
+  }
+  
+  .experiencia-skills ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  .experiencia-skills li {
+    background-color: #E6E6E6;
+    padding: 10px 16px;
+    border-radius: 4px;
+    font-size: 1.2rem;
+  }
+  
+  @media (max-width: 800px){
+    .experiencia-text h2{
+      font-size: 1.8rem;
+    }
+    .experiencia-text p{
+      font-size: 1.2rem;
+    }
+    .experiencia-empresa h3{
+      font-size: 1.4rem;
+    }
+    .experiencia-empresa p, .experiencia-empresa li{
+      font-size: 0.8rem;
+    }
+  }

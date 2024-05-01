@@ -1,0 +1,28 @@
+
+.header {
+ padding: 40px 20px;
+background-color: #fff;
+}
+
+.header-menu {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.header-menu a {
+  font-weight: 500;
+  padding: 10px 16px;
+  font-size: 1.2rem;
+  line-height: 1.3rem;
+  display: block;
+  background-color: #f4f4f4;
+  border-radius: 4px;
+}
+
+.header-menu a:hover {
+  padding: 7px 13px;
+  border: 3px solid #C25708;
+}
+

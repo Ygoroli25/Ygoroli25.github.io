@@ -1,0 +1,138 @@
+.formacao {
+  padding: 80px 20px;
+  background-color: #105161;
+}
+
+.formacao h2, .formacao strong, .formacoes p,.formacoes .titulo, .cursos-idiomas h3 {
+  color: #fff;
+}
+
+.formacao p, .formacoes span, .cursos-idiomas span{
+  color: #CCCCCC;
+}
+
+.formacoes{
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 60px;
+}
+
+.formacao-text h2{
+  margin-bottom: 20px;
+}
+
+.formacao-text p {
+  font-size: 1.2rem;
+  max-width: 800px;
+}
+
+.conteiner-formacao{
+  padding: 20px;
+  width: 220px;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: #072A33;
+  border-radius: 4px;
+  position: relative;
+}
+
+.conteiner-formacao p{
+  text-align: end;
+  font-size: 1rem;
+}
+
+.conteiner-formacao .titulo{
+  font-size: 1.6rem;
+  text-align: center;
+}
+
+.conteiner-formacao::before {
+  content: "";
+  display: block;
+  width: 6px;
+  height: 50px;
+  background-color: #C25708;
+  position: absolute;
+  left: -6px;
+  top: 20px;
+  border-radius: 4px 0 0 4px;
+}
+
+
+.tipo-formacao {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.tipo-formacao span {
+  font-size: 1rem;
+}
+
+.cursos-idiomas{
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 40px;
+  text-align: start;
+}
+
+.cursos li {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.cursos li span, .idiomas li span {
+  font-size: 0.8rem;
+  color: #CCCCCC;
+}
+.cursos li p, .idiomas li p {
+  font-size: 0.8rem;
+  color: #fff;
+}
+
+.cursos-idiomas h3 {
+  margin-bottom: 20px;
+}
+
+.cursos ul{
+  position: relative;
+}
+
+.cursos ul::before {
+  content: "";
+  position: absolute;
+  background-image: url(../imagens/icons/icon-cursos.svg);
+  width: 35px;
+  height: 40px;
+  left: -40px;
+  top: 0px;
+  border-radius: 4px 0 0 4px;
+}
+
+.idiomas ul{
+  position: relative;
+}
+
+.idiomas ul::before {
+  content: "";
+  position: absolute;
+  background-image: url(../imagens/icons/icon-idiomas.svg);
+  width: 35px;
+  height: 40px;
+  left: -40px;
+  top: 0px;
+  border-radius: 4px 0 0 4px;
+}
+
+@media(max-width: 700px){
+  .idiomas ul::before,.cursos ul::before {
+    display: none;
+  }
+}
